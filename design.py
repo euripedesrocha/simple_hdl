@@ -1,6 +1,6 @@
 import myhdl
 
-from simple import Simple
+from simple.simple import Simple
 
 def generate():
     simple_circuit = Simple()
