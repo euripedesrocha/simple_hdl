@@ -4,9 +4,21 @@
 '''
 import myhdl
 
-class SocInterface(object):
-    def __init__(self):
-        pass
+class Simple(object):
+    '''
+        This class define our simple digital
+    '''
+    
+    class CircuitPorts(object):
+        '''
+            This is the place where we declare the circuit ports
+        '''
+        def __init__(self):
+            pass
 
-def top_circuit(signals):
-    pass
+
+    def __init__(self):
+        self.port = Simple.CircuitPorts()
+
+    def top_circuit(self, signals):
+        pass

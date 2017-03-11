@@ -1,10 +1,10 @@
 import myhdl
 
-from simple import simple
+from simple import Simple
 
 def generate():
-    circuit_ports = simple.SocInterface()
-    myhdl.toVerilog(simple.top_circuit, circuit_ports)
+    simple_circuit = Simple()
+    myhdl.toVerilog(simple_circuit.top_circuit, simple_circuit.port)
 
 def synthesize():
     generate()
