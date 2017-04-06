@@ -28,7 +28,7 @@ def test_initial_state():
         yield mhd.delay(1)
 
     def verification(signals):
-        assert signals.leds == 1, 'The display must show Zero'
+        assert signals.leds == 0, 'The display must show Zero'
         yield mhd.delay(1)
 
     simulator = mhd.Simulation(bench(stimulus, verification, circuit_param))
